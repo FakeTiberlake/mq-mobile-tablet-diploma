@@ -510,8 +510,8 @@ body {
      
     display: flex;
     justify-content: start;
-    /* margin-top: 38px;
-    padding: 0; */
+    margin: 33px 0 13px 21px;
+    padding: 0;
 
 }
 
@@ -525,13 +525,13 @@ body {
 
 }
 
-.trend__tag-item:nth-child(n+2) {
+.trends__tag-item:nth-child(n+2) {
 
     margin-left: 20px;
 
 }
 
-.trend-tag__item:hover {
+.trends__tag-item:hover {
 
     text-decoration: underline;
 
@@ -544,12 +544,13 @@ body {
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
-    /* margin-top: 11px;
-    margin-bottom: 32px; */
+    margin-left: 20px;
+    margin-bottom: 30px;
+    margin-right: 28px;
     
 }
 
-.trend-name:hover {
+.trends__name:hover {
 
     color: #ae9e5f;
 
