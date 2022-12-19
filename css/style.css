@@ -21,7 +21,6 @@
 
 body {
     width: 360px;
-    height: 7464px;
     background-color: #ffffff;
     
 }
@@ -266,7 +265,6 @@ body {
 .header {
 
     width: 100%;
-    height: 639px;
     display: flex;
     flex-direction: column;
     
@@ -407,7 +405,6 @@ body {
 .trends {
 
     width: 100%;
-    height: 1030px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -447,7 +444,6 @@ body {
 .trends__posts {
 
     width: 100%;
-    height: 935px;
     display: flex;
     flex-wrap: wrap;
     /* flex-direction: column; */
@@ -457,7 +453,6 @@ body {
 .trends__posts-item {
 
     width: 100%;
-    height: 231px;
     display: flex;
     flex-direction: column;
     background-color: #666666;
@@ -473,7 +468,7 @@ body {
 .trends__img {
 
     width: 100%;
-    height: 231px;
+    /* height: 231px; */
     
 }
 
@@ -558,63 +553,60 @@ body {
 
 /* post-list */
 
-.posts-list {
+.posts {
 
-    width: 775px;
-    height: 1712px;
+    width: 92%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.posts__list {
+
+    width: 92%;
+    box-sizing: border-box;
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: start;
+    justify-content: center;
 
-    float: left;
-
-    margin-top: 65px;
-    margin-left: 245px;
+    border-bottom: 3px solid #eeeeee;
+    margin: 35px 15px 0 15px;
 
 }
 
-.post-list {
+.posts__list:first-child {
 
-    width: 775px;
-    height: 295px;
-    display: flex;
-    align-items: flex-start;
+    margin-top: 44px;
 
 }
 
-.post-list:nth-child(n+2) {
+.posts__img {
 
-    margin-top: 62px;
-}
-
-.post-list__item {
-
-    display: block;
-
-}
-
-.post-list__img {
-
-    width: 380px;
-    height: 295px;
+    width: 92%;
+    /* height: 253px; */
     background-color: #f1f6f1;
     
 }
 
-.post-list__item {
+.posts__list-item {
 
-    margin-left: 31px;
+    width: 92%;
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 15px;
+    margin-bottom: 22px;
 
 }
 
-.post-head {
+.posts__head {
 
     display: block;
     
 }
 
-.post-tag {
+.posts__tag {
      
     display: flex;
     justify-content: start;
@@ -623,7 +615,7 @@ body {
 
 }
 
-.post-tag__item {
+.posts__tag-item {
 
     font-family: OpenSans-Bold, sans-serif;
     color: #ae9e5f;
@@ -633,43 +625,43 @@ body {
 
 }
 
-.post-tag__item:nth-child(n+2) {
+.posts__tag-item:nth-child(n+2) {
 
     margin-left: 20px;
 
 }
 
-.post-tag__item:hover {
+.posts__tag-item:hover {
 
     text-decoration: underline;
 
 }
 
-.post-title {
+.posts__title {
 
     font-family: OpenSans-Bold, sans-serif;
     color: #161516;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 20px;
     text-transform: uppercase;
-    margin-top: 15px;
-    margin-bottom: 37px;
+    margin-top: 13px;
+    margin-bottom: 25px;
     
 }
 
-.post-title:hover {
+.posts__title:hover {
 
     color: #ae9e5f;
 }
 
-.post-inform {
+.posts__inform {
 
     display: flex;
-    margin-bottom: 55px;
-
+    margin-bottom: 25px;
+  
 }
 
-.post-date {
+.posts__date {
 
     font-family: OpenSans-Regular, sans-serif;
     color: #888888;
@@ -677,49 +669,44 @@ body {
     
 }
 
-.post-author {
+.posts__author {
 
     font-family: OpenSans-Bold, sans-serif;
     color: #000000;
     font-size: 12px;
-    margin-left: 15px;
+    margin-left: 14px;
 
 }
 
-.post-description {
+.posts__subtitle {
 
     font-family: OpenSans-Regular, sans-serif;
     color: #161516;
-    font-size: 15px;
-    line-height: 22px;
-    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
     
 }
 
 
 /* sidebar */
 
+
 .sidebar {
 
-    width: 270px;
-    height: 1424px;
-
-    float: right;
+    width: 92%;
 
     display: flex;
-    flex-direction: column;
-    margin-top: 64px;
-    margin-left: 125px;
-    margin-bottom: 289px;
-    margin-right: 245px;
+    flex-wrap: wrap;
+
+
+     
 
 }
 
-.latest-posts {
+.sidebar__latest-posts {
 
-    width: 270px;
-    height: 494px;
-    margin-bottom: 60px;
+    width: 100%;
+    margin: 0 15px 60px 15px;
 
     display: flex;
     flex-direction: column;
@@ -728,75 +715,69 @@ body {
 
 }
 
-.latest-posts__header {
+.sidebar__title {
 
+    width: 100%;
     font-family: OpenSans-Bold, sans-serif;
-    font-size: 14px;
-    color: #161516;
+    font-size: 16px;
     text-transform: uppercase;
+    color: #0f0d0e;
 
     position: relative;
+    
+    margin-top: 44px;
+    margin-bottom: 45px;
 
-    margin-bottom: 46px;
-
+    text-align: center;
+    
 }
 
-.latest-posts__header::after {
+.sidebar__title:after { 
 
     content: "";
-    width: 66px;
+    width: 20%;
     height: 3px;
 
     position: absolute;
     top: 24px;
-    right: 20px;
+    right: 40%;
 
     opacity: 0.4;
     background-color: #ae9e5f;
-
+   
 }
 
-latest-post {
-
-    width: 270px;
-    height: 438px;
-
-}
-
-.latest-post__item {
-
-    width: 270px;
-    height: 70px;
+.sidebar__post-item {
 
     display: flex;
+
+}
+
+
+.sidebar__post-item:nth-child(n+2) {
+
+    margin-top: 20px;
+
+}
+
+.sidebar__img {
     
-}
-
-.latest-post__item:nth-child(n+2) {
-
-    margin-top: 22px;
-
-}
-
-.latest-post-img {
-
-    width: 70px;
-    height: 70px;
     background-color: #f5f7f5;
 
     margin-right: 20px;
 
 }
 
-.latest-post__info {
+.sidebar__post-info {
 
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 
+
 }
 
-.date-published {
+.sidebar__post-date {
 
     font-family: OpenSans-Regular, sans-serif;
     font-size: 12px;
@@ -804,13 +785,13 @@ latest-post {
     opacity: 0.54;
 
     margin-top: 0;
-    margin-bottom: 9px;
+    margin-bottom: 10px;
 
     align-items: flex-start;
 
 }
 
-.latest-post__name {
+.sidebar__post-name {
 
     font-family: OpenSans-Bold, sans-serif;
     font-size: 14px;
@@ -822,39 +803,39 @@ latest-post {
 
 }
 
+
 .search {
 
-    margin-bottom: 61px;
-}
-
-.search-form {
-
-    width: 270px;
-    height: 49px;
+    width: 330px;
+    height: 48px;
     display: flex;
 
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 44px;
+
 }
 
-.search-field {
+.search__field {
 
-    width: 222px;
-    height: 49px;
+    width: 282px;
+    height: 48px;
     box-sizing: border-box;
 
-    padding: 0 0 0 18px;
     background-color: #f5f7f6;
     border: none;
+    padding: none;
 
 }
 
-.search-field:focus {
+.search__field:focus {
 
     outline: none;
     border: 2px solid #ae9e5f;
     
 }
 
-.search-field::placeholder {
+.search__field::placeholder {
 
     font-family: OpenSans-Regular, sans-serif;
     font-size: 13px;
@@ -863,33 +844,32 @@ latest-post {
 
 }
 
-.search-button {
+.search__button {
 
     width: 48px;
-    height: 49px;
+    height: 48px;
     padding: 0;
     background-color: #ae9e5f;
     border: none;
 }
 
-.search-button:hover {
+.search__button:hover {
 
     background-color: #353535;
 }
 
-.button-img {
+.search__img {
 
     width: 18px;
     height: 18px;
     z-index: 0;
-
 }
 
 .subscribe {
 
-    width: 270px;
-    height: 164px;
-    margin-bottom: 61px;
+    width: 330px;
+
+    /* margin-bottom: 61px; */
 
     display: flex;
     flex-direction: column;
@@ -897,10 +877,10 @@ latest-post {
     
 }
 
-.subscribe-title {
+.subscribe__title {
 
     font-family: OpenSans-Bold, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     text-transform: uppercase;
     position: relative;
     margin-bottom: 40px;
@@ -908,7 +888,7 @@ latest-post {
 
 }
 
-.subscribe-title::after {
+.subscribe__title::after {
 
     content: "";
     width: 66px;
@@ -923,17 +903,17 @@ latest-post {
     
 }
 
-.subscribe-form {
+.subscribe__form {
 
     display: flex;
     flex-direction: column;
 
 }
 
-.email-field {
+.subscribe__email {
 
-    width: 270px;
-    height: 49px;
+    width: 330px;
+    height: 48px;
     box-sizing: border-box;
 
     padding: 0 0 0 18px;
@@ -943,14 +923,14 @@ latest-post {
 
 }
 
-.email-field:focus {
+.subscribe__email:focus {
 
     outline: none;
     border: 2px solid #ae9e5f;
     
 }
 
-.email-field::placeholder {
+.subscribe__email::placeholder {
 
     font-family: OpenSans-Regular, sans-serif;
     font-size: 13px;
@@ -959,10 +939,10 @@ latest-post {
 
 }
 
-.subscribe-button {
+.subscribe__button {
 
-    width: 270px;
-    height: 49px;
+    width: 330px;
+    height: 48px;
     padding: 0;
     background-color: #ae9e5f;
     border: none;
@@ -1157,6 +1137,7 @@ latest-post {
 
 /* shop */
 
+/*
 .shop {
 
     width: 1170px;
