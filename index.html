@@ -251,42 +251,40 @@
         </div>
 
         <div class="tags">
-            <h4 class="tags-title">Теги</h4>
-            <div class="tags-list">
-                <ul class="tag">
-                    <li class="tag-item">Fashion</li>
-                    <li class="tag-item">Music</li>
-                    <li class="tag-item">Lifestyle</li>
-                    <li class="tag-item">Art</li>
-                    <li class="tag-item">Interior</li>
-                    <li class="tag-item">Travel</li>
-                    <li class="tag-item">Food</li>
-                    <li class="tag-item">Health</li>
-                </ul>
-            </div>
+            <h4 class="tags__title">Теги</h4>            
+            <ul class="tags__tag-list">
+                <li class="tags__tag-item">Fashion</li>
+                <li class="tags__tag-item">Music</li>
+                <li class="tags__tag-item">Lifestyle</li>
+                <li class="tags__tag-item">Art</li>
+                <li class="tags__tag-item">Interior</li>
+                <li class="tags__tag-item">Travel</li>
+                <li class="tags__tag-item">Food</li>
+                <li class="tags__tag-item">Health</li>
+            </ul>
         </div>
 
-        <div class="categories">
-            <h4 class="categories-title">Темы</h4>
-            <table class="categories-table">
+        <div class="category">
+            <h4 class="category__title">Темы</h4>
+            <table class="category__table">
                 <tbody>
-                    <tr class="category">
-                        <td class="category-item category-item__name ">Красота</td> <td class="category-item category-item__count">12</td>
+                    <tr class="category__item">
+                        <td class="category__item-name">Красота</td> <td class="category__item-count">12</td>
                     </tr>
-                    <tr class="category">
-                        <td class="category-item category-item__name">Здоровье</td> <td class="category-item category-item__count">4</td>
+                    <tr class="category__item">
+                        <td class="category__item-name">Здоровье</td> <td class="category__item-count">4</td>
                     </tr>
-                    <tr class="category">
-                        <td class="category-item category-item__name">Образ жизни</td> <td class="category-item category-item__count">145</td>
+                    <tr class="category__item">
+                        <td class="category__item-name">Образ жизни</td> <td class="category__item-count">145</td>
                     </tr>
-                    <tr class="category">
-                        <td class="category-item category-item__name">Музыка</td> <td class="category-item category-item__count">28</td>
+                    <tr class="category__item">
+                        <td class="category__item-name">Музыка</td> <td class="category__item-count">28</td>
                     </tr>
-                    <tr class="category">
-                        <td class="category-item category-item__name">Спорт</td> <td class="category-item category-item__count">62</td>
+                    <tr class="category__item">
+                        <td class="category__item-name">Спорт</td> <td class="category__item-count">62</td>
                     </tr>
-                    <tr class="category">
-                        <td class="category-item category-item__name">Йога</td> <td class="category-item category-item__count">8</td>
+                    <tr class="category__item">
+                        <td class="category__item-name">Йога</td> <td class="category__item-count">8</td>
                     </tr>
                 </tbody>
             </table>               
@@ -294,58 +292,52 @@
 
     </aside>
 
-    <!--
+   
     <section class="shop">
-        <h3 class="shop-title">Наши изделия</h3>
-        <div class="products">
+        <h4 class="shop__title">Наши изделия</h4>
+        <div class="shop__products">
 
-            <article class="product">
-                    <img class="product-picture" src="images/shop-item-desk1.jpg" alt="Товар в магазине: Подушки на диван">
-                    <div class="product-card">
-                    <div class="product-content">
-                        <h3 class="product-name">Подушки на диван</h3>
-                        <p class="product-description">Набор из двух подушек с модными принтами. Видео о создании <a href="#" class="product-link">здесь</a>.</p>
-                        <div class="product-footer">
-                            <div class="product-prices">
-                                <div class="product-prices product-old-price">1000 Р</div>
-                                <div class="product-prices product-new-price">800 Р</div>
+            <article class="shop__product-item product__pillows">
+                    <img class="shop__picture" src="images/shop-item-mobile1.jpg" alt="Товар в магазине: Подушки на диван">
+                    <div class="shop__product-card">                        
+                        <h5 class="shop__product-name">Подушки на диван</h5>
+                        <p class="shop__product-description">Набор из двух подушек с модными принтами. Видео о создании <a href="#" class="shop__product-link">здесь</a>.</p>
+                        <div class="shop__product-footer">
+                            <div class="shop__product-prices product-prices">
+                                <div class="product-prices__old-price">1000 Р</div>
+                                <div class="product-prices__new-price">800 Р</div>
                             </div>
-                            <button class="product-button" type="button">В магазин</button>
-                        </div>
+                            <button class="shop__product-button" type="button">В магазин</button>
+                        </div>                        
                     </div>
+            </article>
+
+            <article class="shop__product-item product__bunny">
+                <img class="shop__picture" src="images/shop-item-mobile2.jpg" alt="Товар в магазине: Кукла 'Зайчик'">
+                <div class="shop__product-card">                
+                <h5 class="shop__product-name">Кукла «Зайчик»</h5>
+                <p class="shop__product-description">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#" class="shop__product-link">весенняя серия постов</a> в блоге и несколько подкастов.</p>
+                <div class="shop__product-footer">
+                    <div class="shop__product-prices product-prices">
+                        <div class="product-prices__old-price"></div>
+                        <div class="product-prices__new-price">3500 Р</div>
+                    </div>
+                    <button class="shop__product-button" type="button">В магазин</button>
+                </div>                
                 </div>
             </article>
 
-            <article class="product">
-                <img class="product-picture" src="images/shop-item-desk2.jpg" alt="Товар в магазине: Кукла 'Зайчик'">
-                <div class="product-card">
-                <div class="product-content">
-                    <h3 class="product-name">Кукла «Зайчик»</h3>
-                    <p class="product-description">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="#" class="product-link">весенняя серия постов</a> в блоге и несколько подкастов.</p>
-                    <div class="product-footer">
-                        <div class="product-prices">
-                            <div class="product-prices product-old-price"></div>
-                            <div class="product-prices product-new-price">3500 Р</div>
-                        </div>
-                        <button class="product-button" type="button">В магазин</button>
+            <article class="shop__product-item priduct__border">
+                <img class="shop__picture" src="images/shop-item-mobile3.jpg" alt="Товар в магазине: Шестиугольная рамка">
+                <div class="shop__product-card">                
+                <h5 class="shop__product-name">Шестиугольная рамка</h5>
+                <p class="shop__product-description">Необычная рамка для украшения дома из видео <a href="" class="shop__product-link">«Как сделать рамку из подручных средств за 30 минут»</a>.</p>
+                <div class="shop__product-footer">
+                    <div class="shop__product-prices product-prices">
+                        <div class="product-prices__old-price">500 Р</div>
+                        <div class="product-prices__new-price">400 Р</div>
                     </div>
-                </div>
-            </div>
-            </article>
-
-            <article class="product">
-                <img class="product-picture" src="images/shop-item-desk3.jpg" alt="Товар в магазине: Шестиугольная рамка">
-                <div class="product-card">
-                <div class="product-content">
-                    <h3 class="product-name">Шестиугольная рамка</h3>
-                    <p class="product-description">Необычная рамка для украшения дома из видео <a href="" class="product-link">«Как сделать рамку из подручных средств за 30 минут»</a>.</p>
-                    <div class="product-footer">
-                        <div class="product-prices">
-                            <div class="product-prices product-old-price">500 Р</div>
-                            <div class="product-prices product-new-price">400 Р</div>
-                        </div>
-                        <button class="product-button" type="button">В магазин</button>
-                    </div>
+                    <button class="shop__product-button" type="button">В магазин</button>
                 </div>
                 </div>
             </article>
@@ -353,67 +345,70 @@
         </div>
     </section>
 
+    
     <footer class="footer">
-        <div class="socials">
-            <address class="socials-links">
-                <a href="#" class="socials-link">
-                    <img src="svg/001-dribbble.svg" alt="Логотип социальной сети Dribbble" class="logo-dribbble">
+        <div class="footer__socials">
+            <address class="footer__socials-links">
+                <a href="#" class="footer__socials-item">
+                    <img src="svg/001-dribbble.svg" alt="Логотип социальной сети Dribbble" class="footer__logo">
                 </a>
-                <a href="#" class="socials-link">
-                    <img src="svg/001-pinterest.svg" alt="Логотип социальной сети Pinterest" class="logo-pinterest">
+                <a href="#" class="footer__socials-item">
+                    <img src="svg/001-pinterest.svg" alt="Логотип социальной сети Pinterest" class="footer__logo">
                 </a>
-                <a href="#" class="socials-link">
-                    <img src="svg/003-tumblr.svg" alt="Логотип социальной сети Tumblr" class="logo-tumblr">
+                <a href="#" class="footer__socials-item">
+                    <img src="svg/003-tumblr.svg" alt="Логотип социальной сети Tumblr" class="footer__logo">
                 </a>
             </address>
         </div>
-        <div class="copyrights">
-            <p class="copyrights-info">Copyright © 2009–2019 City Blog LLC.</p>
+        <div class="footer__copyrights">
+            <p class="footer__copyrights-info">Copyright © 2009–2019 City Blog LLC.</p>
         </div>
     </footer>
 
+     
     <form class="popup">
 
-        <div class="popup-container">
-            <h5 class="popup-title">Ваш фидбек</h5>
+        <div class="popup__container">
+            <h4 class="popup__title">Ваш фидбек</h4>
 
-            <div class="frequency">
-                <div class="frequency-title">Как часто вы заходите на сайт?</div>
-                <select class="select">
-                    <option class="select__text" value="Every day">Почти каждый день</option>
-                    <option class="select__text" value="Once every few days">Раз в несколько дней</option>
-                    <option class="select__text" value="Once every few weeks">Раз в несколько недель</option>
-                    <option class="select__text" value="Several times a year">Несколько раз в год</option>
+            <div class="popup__frequency">
+                <div class="popup__frequency-title">Как часто вы заходите на сайт?</div>
+                <select class="popup__select">
+                    <option class="popup__select-text" value="Every day">Почти каждый день</option>
+                    <option class="popup__select-text" value="Once every few days">Раз в несколько дней</option>
+                    <option class="popup__select-text" value="Once every few weeks">Раз в несколько недель</option>
+                    <option class="popup__select-text" value="Several times a year">Несколько раз в год</option>
                 </select>
             </div>
 
-            <div class="radio-button">
-                <div class="radio-title">Вы подписаны на e-mail рассылку?</div>
-                <label class="radio-group">
-                    <input class="radio" type="radio" name="subscription" checked>
-                    <span class="radio-group-text">Да</span>
+            <div class="popup__radio-button">
+                <div class="popup__radio-title">Вы подписаны на e-mail рассылку?</div>
+                <label class="popup__radio-group">
+                    <input class="popup__radio" type="radio" name="subscribe" checked>
+                    <span class="popup__radio-text">Да</span>
                 </label>
-                <label class="radio-group">
-                    <input class="radio" type="radio" name="subscription">
-                    <span class="radio-group-text">Нет</span>
+                <label class="popup__radio-group">
+                    <input class="popup__radio" type="radio" name="subscribe">
+                    <span class="popup__radio-text">Нет</span>
                 </label>
             </div>
 
-            <div class="input-content">
-                <div class="input-content-title">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</div>
+            <div class="popup__input">
+                <div class="popup__input-title">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</div>
                 <label>
-                    <input class="input-content-form" type="text" placeholder="Может, больше рецептов?">
+                    <input class="popup__input-form" type="text" placeholder="Может, больше рецептов?">
                 </label>
             </div>
 
-            <button class="popup-button" type="button">Отправить</button>
+            <button class="popup__button" type="button">Отправить</button>
             
-            <button class="popup-close" type="button">
-                <img src="svg/form-x.svg" alt="Закрыть" class="popup-close__img">
+            <button class="popup__close" type="button">
+                <img src="svg/form-x.svg" alt="Закрыть" class="popup__close-img">
             </button>
         </div>
 
-    </form> -->
+    </form>
+        
 
 </body>
 </html>
