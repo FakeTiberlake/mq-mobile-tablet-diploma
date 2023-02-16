@@ -9,46 +9,48 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+    <div class="main-container">
     <header class="header">
-        <div class="header__top-panel">   
-            <nuv>
-                <ul class="header__menu">
-                    <li class="header__menu-item">
-                        <a class="header__menu-link" href="#">Главная</a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a class="header__menu-link" href="#">Посты</a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a class="header__menu-link" href="#">Статьи</a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a class="header__menu-link" href="#">Теги</a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a class="header__menu-link" href="#">Темы</a>
-                    </li>
-                    <li class="header__menu-item">
-                        <a class="header__menu-link" href="#">Контакты</a>                
-                    </li>
-                </ul>
-            </nuv>  
-            <button class="header__button" type="button">
-                <div class="header__button-elem"></div>
-                <div class="header__button-elem"></div>
-                <div class="header__button-elem"></div>
-            </button>                
-        </div>  
-
-        <div class="header__slogan">
+        <div class="header__top-panel">
             <img class="header__logo" src="svg\noemi-logo.svg" alt="Логотип компании Noemi">
+            <div class="header__burger-menu">
+                <nuv>
+                    <ul class="header__menu">
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">Главная</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">Посты</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">Статьи</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">Теги</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">Темы</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">Контакты</a>                
+                        </li>           
+                    </ul>
+                </nuv>  
+                <button class="header__button" type="button">
+                    <div class="header__button-elem"></div>
+                    <div class="header__button-elem"></div>
+                    <div class="header__button-elem"></div>
+                </button>
+            </div>                          
+        </div>
+        <div class="header__slogan">
             <h1 class="header__slogan-text">Блог о творчестве, спорте, и образе жизни</h1>
         </div>         
     </header>
     <section class="trends">
         <div class="trends__title title">
             <h2 class="trends__title-text title-text">Сейчас в тренде</h2>
-            <div class="trends__title line"></div>
+            <div class="trends__title-line line"></div>
         </div>            
         <div class="trend__posts">
             <article class="trend__post window-garden">
@@ -134,7 +136,7 @@
                         </ul>
                     </div>
                     <h3 class="post__title">
-                        <a href="#" class="post__title-link">10 вещей, ради которых стоит проснуться на рассвете</a>
+                        <a href="#" class="post__title-link">10 мест, ради которых стоит проснуться на рассвете</a>
                     </h3>
                 </div>
                 <div class="post__inform">
@@ -254,7 +256,7 @@
         <section class="sidebar__latest-posts">
             <div class="sidebar__title title">
                 <h3 class="sidebar__title-text title-text">Новые посты</h3>
-                <div class="sidebar__title line"></div>
+                <div class="sidebar__title-line line"></div>
             </div>
 
             <div class="latest-post">
@@ -315,7 +317,7 @@
         <div class="subscribe">
             <div class="subscribe__title title">
                  <h4 class="subscribe__title-text title-text">Рассылка</h4>
-                 <div class="subscribe__title line"></div>
+                 <div class="subscribe__title-line line"></div>
             </div>
            
             <form class="subscribe__form">
@@ -331,7 +333,7 @@
         <div class="tags">
             <div class="tags__title title">
                 <h3 class="tags__title-text title-text">Теги</h3>
-                <div class="tags__title line"></div>
+                <div class="tags__title-line line"></div>
             </div>            
             <div class="tags__list">
                 <ul class="tag">
@@ -366,7 +368,7 @@
         <div class="categories">
             <div class="categories__title title">
                 <h3 class="categories__title-text title-text">Темы</h3>
-                <div class="categories__title line"></div>
+                <div class="categories__title-line line"></div>
             </div>
             <div class="categories__list">                
                 <ul class="category">
@@ -416,7 +418,7 @@
     <section class="shop">
         <div class="shop__title title">
             <h3 class="shop__title-text title-text">Наши изделия</h3>
-            <div class="shop__title line"></div>
+            <div class="shop__title-line line"></div>
         </div>
         <div class="shop__products">
 
@@ -489,7 +491,7 @@
         <div class="popup">
             <div class="popup__title">
                 <h5 class="popup__title-text title-text">Ваш фидбек</h5>
-                <div class="popup__title line"></div>
+                <div class="popup__title-line line"></div>
             </div>
             
 
@@ -530,6 +532,6 @@
         </div>
 
     </form>
-
+</div>
 </body>
 </html>
