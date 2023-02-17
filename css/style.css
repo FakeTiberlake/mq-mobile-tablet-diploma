@@ -1071,7 +1071,7 @@ background-image: url(../images/trend3.jpg);
 .popup-container {
 
     width: 100%;
-    visibility: hidden;
+    /* visibility: hidden; */
 
     position: absolute;
     top: 3.5em;
@@ -1523,6 +1523,14 @@ background-image: url(../images/trend3.jpg);
         height: 16.5em;
     }
 
+    .popup-container {
+
+        width: 25em;  
+        top: 14.75em;
+        left: 9.5em;
+    
+    }
+
   }
 
    @media (orientation: landscape) and (min-width: 641px) and (max-width: 1200px) { 
@@ -1537,7 +1545,7 @@ background-image: url(../images/trend3.jpg);
         justify-content: space-between;
 
     }
-    
+
     .trend__post {
 
         width: calc(25% - 0.25em);
