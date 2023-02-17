@@ -144,7 +144,6 @@
 
     z-index: 1;
     margin: 2.1875em 1.25em 0 1.25em;
-    /* margin: 0 auto; */
 }
 
 .header__slogan-text {
@@ -337,6 +336,12 @@ background-image: url(../images/trend3.jpg);
 
     color: #ae9e5f;
     
+}
+
+.posts-sidebar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .posts {
@@ -1315,15 +1320,13 @@ background-image: url(../images/trend3.jpg);
     }
 } 
 
-  /*ПЛАНШЕТ*/
-
   @media (min-width: 641px) and (max-width: 1200px) {
 
     .main-container {
-        min-width: 641px;
-        min-width: 1200px;
-        width: 100%;
+
         justify-content: flex-start;
+        margin: 0 auto;
+
     }
 
     .header {
@@ -1339,7 +1342,7 @@ background-image: url(../images/trend3.jpg);
 
         box-sizing: border-box;
         margin-top: 3.125em; 
-        margin-bottom: 5.625em;  
+        margin-bottom: 7.5em;  
 
       }
 
@@ -1353,28 +1356,29 @@ background-image: url(../images/trend3.jpg);
       }
 
     .header__burger-menu {
-        padding-top: 0.3125em;
-        justify-content: space-between;
+
+        height: 1.8125em;
+        align-items: center;
 
     }
 
     .header__menu {
 
-        margin-left: 1.5625em;
-        padding-left: 0;
-        /* visibility: hidden; */
+        margin: 0;
+        padding-left: 0;        
 
     }
 
       .header__button {
 
-        margin-bottom: 5.625em;
+        margin-bottom: 0;
+        align-self: auto;
 
     }
 
       .header__slogan {
 
-        margin: 0 auto;
+        margin: 0 2.71em;
 
       }
 
@@ -1382,7 +1386,6 @@ background-image: url(../images/trend3.jpg);
 
         font-size: 2.5em;
         line-height: 1.375em;
-        margin: 0;
 
       }
 
@@ -1430,7 +1433,9 @@ background-image: url(../images/trend3.jpg);
       .trend__post {
 
         width: calc(50% - 0.25em);
+        height: 15.375em;
         margin-top: 0.1875em;
+        
       }
 
       .trend__post:nth-child(2n+1) {
@@ -1444,10 +1449,18 @@ background-image: url(../images/trend3.jpg);
         padding: 0 1.9375em 2.125em 1.9375em;
     }
 
+    .posts-sidebar {
+
+        flex-direction: row;
+        justify-content: space-between;
+     
+    }
+
     .posts {
 
         width: 24.5em;
         margin-top: 3.1875em;
+        margin-right: 2.19em;
 
     }
     
@@ -1471,29 +1484,75 @@ background-image: url(../images/trend3.jpg);
     .sidebar {
 
         width: 16.94em;
-        margin-left: 2.1875em;
+
+    }
+
+    .sidebar__title {
+        margin-top: 3.1875em;
+
+    }
+
+    .shop__products {
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    .product {
+
+        width: calc(50% - 1.44em);
+
+    }
+
+    .product:nth-child(n+2) {
+    
+        margin-top: 0;
+    
+    }
+
+    .product:nth-child(n+3) {
+    
+        margin-top: 1.75em;
+    
+    }
+
+    .product__card {
+
+        height: 16.5em;
     }
 
   }
 
+   @media (orientation: landscape) and (min-width: 641px) and (max-width: 1200px) { 
 
+    .trends {
 
-  /* ОРИЕНТАЦИЯ ДЛЯ ПЛАНШЕТОВ!!!! */
+        width: 200%;
+    }
 
-  /* Для устройств с шириной экрана, попадающей 
- в диапазон от 641px до 1200px, при портретной 
- ориентации экрана карточки трендов должны быть 
- выстроены в две колонки, а при пейзажной ориентации
-  — в четыре. */
+    .trend__posts {
 
-   /* @media (orientation: landscape) and (min-width: 641px) and (max-width: 1200px) {
-    четыре колонки 
-       
+        justify-content: space-between;
+
     }
     
-      @media (orientation: portrait) and (min-width: 641px) and (max-width: 1200px) {
-         две колонки 
+    .trend__post {
+
+        width: calc(25% - 0.25em);
+
+      }
+       
+      
+    }
     
-        
-            
-      } */
+      @media (orientation: portrait) and (min-width: 641px) and (max-width: 1200px) { 
+
+        .trend__post {
+
+            width: calc(50% - 0.25em);
+
+          }
+          
+      }
