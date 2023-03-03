@@ -28,6 +28,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 0 0.9375em;
 }
 
 .header {
@@ -165,31 +166,26 @@
 
 }
 
-.title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2.75em;
-
-}
-
-.title-text {
+.trends__title-text {
 
     font-family: OpenSans-Bold, sans-serif;
     font-size: 1em;
     text-transform: uppercase;
     color: #0f0d0e;
-
-    margin: 0;
+    position: relative;
+    margin: 2.75em 0 2.5em 0;
     
 }
 
-.line {
+.trends__title-text::after {
 
+    content: "";
     width: 4.1875em;
     height: 0.1875em;
     background-color: rgba(174,158,95,0.4);
-    margin: 0.9375em 0 1.5625em 0;
+    position: absolute;
+    bottom: -0.75em;
+    left: 2.5em;
 
 }
 
@@ -268,7 +264,7 @@ background-image: url(../images/trend3.jpg);
 
     margin-bottom: 1.0625em;
     margin-top: 5.5em;
-    padding: 0 1.875em 1.9375em 1.375em;
+    padding: 2.0625em 1.875em 1.9375em 1.375em;
 
     z-index: 1;
 
@@ -278,7 +274,7 @@ background-image: url(../images/trend3.jpg);
      
     display: flex;
     justify-content: start;
-    margin: 2.0625em 0 1.0625em 0;
+    margin: 0 0 1.0625em 0;
     padding: 0;
 
 }
@@ -334,12 +330,6 @@ background-image: url(../images/trend3.jpg);
 
     color: #ae9e5f;
     
-}
-
-.posts-sidebar{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
 .posts {
@@ -507,6 +497,29 @@ background-image: url(../images/trend3.jpg);
 
 }
 
+.sidebar__title-text {
+
+    font-family: OpenSans-Bold, sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #0f0d0e;
+    position: relative;
+    margin: 2.75em 0 2.5em 0;    
+
+}
+
+.sidebar__title-text::after {
+
+    content: "";
+    width: 4.1875em;
+    height: 0.1875em;
+    background-color: rgba(174,158,95,0.4);
+    position: absolute;
+    bottom: -0.75em;
+    left: 1.6875em;
+
+}
+
 .latest-post {
 
     width: 100%;
@@ -643,6 +656,29 @@ background-image: url(../images/trend3.jpg);
     
 }
 
+.subscribe__title-text {
+
+    font-family: OpenSans-Bold, sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #0f0d0e;
+    position: relative;
+    margin: 2.75em 0 2.5em 0;    
+
+}
+
+.subscribe__title-text::after {
+
+    content: "";
+    width: 4.1875em;
+    height: 0.1875em;
+    background-color: rgba(174,158,95,0.4);
+    position: absolute;
+    bottom: -0.75em;
+    left: 0.625em;
+
+}
+
 .subscribe__form {
 
     width: 100%;
@@ -709,9 +745,27 @@ background-image: url(../images/trend3.jpg);
 
 }
 
-.tags__title-line {
+.tags__title-text {
 
-    margin-bottom: 1.125em;
+    font-family: OpenSans-Bold, sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #0f0d0e;
+    position: relative;
+    margin: 2.75em 0 2.5em 0;    
+
+}
+
+.tags__title-text::after {
+
+    content: "";
+    width: 4.1875em;
+    height: 0.1875em;
+    background-color: rgba(174,158,95,0.4);
+    position: absolute;
+    bottom: -0.75em;
+    left: -0.75em;
+
 }
 
 .tag {
@@ -767,6 +821,29 @@ background-image: url(../images/trend3.jpg);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.categories__title-text {
+
+    font-family: OpenSans-Bold, sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #0f0d0e;
+    position: relative;
+    margin: 2.75em 0 2.5em 0;    
+
+}
+
+.categories__title-text::after {
+
+    content: "";
+    width: 4.1875em;
+    height: 0.1875em;
+    background-color: rgba(174,158,95,0.4);
+    position: absolute;
+    bottom: -0.75em;
+    left: -0.5em;
+
 }
 
 .categories__list {
@@ -840,10 +917,35 @@ background-image: url(../images/trend3.jpg);
 
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     margin-bottom: 2.6875em;
 
 }
+
+.shop__title-text {
+
+    font-family: OpenSans-Bold, sans-serif;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #0f0d0e;
+    position: relative;
+    margin: 2.75em 0 2.5em 0;    
+
+}
+
+.shop__title-text::after {
+
+    content: "";
+    width: 4.1875em;
+    height: 0.1875em;
+    background-color: rgba(174,158,95,0.4);
+    position: absolute;
+    bottom: -0.75em;
+    left: 2.1875em;
+
+}
+
 
 .shop__products {
 
@@ -1303,7 +1405,7 @@ background-image: url(../images/trend3.jpg);
     }
 }
 
-  @media (orientation: portrait) and (max-width: 640px) {
+  @media (orientation: portrait) and (max-width: 640px)  {
 
     .trend__post {
 
@@ -1316,7 +1418,11 @@ background-image: url(../images/trend3.jpg);
 
     .main-container {
 
+        width: 43.625em;
+        flex-wrap: wrap;
+        flex-direction: row;
         margin: 0 auto;
+        padding: 0 2.1875em;
 
     }
 
@@ -1379,7 +1485,7 @@ background-image: url(../images/trend3.jpg);
 
         font-size: 2.5em;
         line-height: 1.375em;
-        margin: 0 1em;
+        margin: 0 1em; 
 
       }
 
@@ -1389,7 +1495,7 @@ background-image: url(../images/trend3.jpg);
 
       }
 
-      .trends__title, .shop__title, sidebar__title{
+      .trends__title, .shop__title, sidebar__title {
 
         margin-top: 3.125em;
 
@@ -1439,7 +1545,7 @@ background-image: url(../images/trend3.jpg);
 
     .trend__content {
 
-        padding: 0 1.9375em 2.125em 1.9375em;
+        padding: 2.1875em 1.9375em 2.125em 1.9375em;
     }
 
     .posts-sidebar {
@@ -1455,6 +1561,7 @@ background-image: url(../images/trend3.jpg);
         width: 24.5em;
         margin-top: 3.1875em;
         margin-right: auto;
+        float: left;
 
     }
     
@@ -1478,6 +1585,8 @@ background-image: url(../images/trend3.jpg);
     .sidebar {
 
         width: 16.94em;
+        float: right;
+        margin-left: auto;
 
     }
 
@@ -1518,22 +1627,10 @@ background-image: url(../images/trend3.jpg);
     
     }
 
-    .card__pillows {
-        
-        padding-bottom: 4.3125em;
-
+    .product__card {
+        height: 100%;
     }
 
-    .card__dolly-bunny {
-
-        padding-bottom: 1.625em;
-    }
-
-    .card__hexagonal-frame {
-
-        padding-bottom: 1.625em;
-
-    }
 
     .socials {
 
