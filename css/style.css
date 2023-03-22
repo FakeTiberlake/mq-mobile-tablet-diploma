@@ -24,8 +24,7 @@
     background-color: #ffffff;
     
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     
 }
 
@@ -1705,10 +1704,6 @@ background-repeat: no-repeat;
         width: 200%;
     }
 
-    .trends-container {
-
-        width: ;
-    }
 
     .trend__posts {
 
@@ -1743,7 +1738,12 @@ background-repeat: no-repeat;
       @media (min-width: 1201px) {
 
     .main-container {
-
+    
+    background-color: #ffffff;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin: 0 auto; 
 
     }
